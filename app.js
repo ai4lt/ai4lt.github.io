@@ -48,10 +48,14 @@ function renderDemos() {
     const visual = demo.image
       ? `<img class="demo-logo" src="${demo.image}" alt="" />`
       : symbolFor(demo.id);
+    const attribution = demo.attribution?.[language];
+    const collaboration = attribution
+      ? `<p class="card-collaboration">${attribution.prefix} <a href="${demo.attributionUrl}" target="_blank" rel="noreferrer">${attribution.linkLabel}</a>${attribution.suffix}</p>`
+      : "";
     return `<article class="demo-card ${demo.tone}">
       <div class="card-top"><span class="demo-number">${demo.number}</span><span class="access-dot">${t.access}</span></div>
       <div class="demo-symbol" aria-hidden="true">${visual}</div>
-      <div class="tag-list">${tags}</div><h3>${demo.title}</h3><p>${demo.description[language]}</p><div class="card-actions">${launchAction}${infoAction}</div>
+      <div class="tag-list">${tags}</div><h3>${demo.title}</h3>${collaboration}<p>${demo.description[language]}</p><div class="card-actions">${launchAction}${infoAction}</div>
     </article>`;
   }).join("");
 }

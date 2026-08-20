@@ -6,6 +6,11 @@ window.AI4LT_DEMOS = [
     title: "Lecture Translator",
     url: "https://lecture-translator.kit.edu/",
     image: "assets/lt-logo.png",
+    attribution: {
+      en: { prefix: "Jointly developed by", linkLabel: "ISL", suffix: " and AI4LT at KIT" },
+      de: { prefix: "Gemeinsam entwickelt von", linkLabel: "ISL", suffix: " und AI4LT am KIT" }
+    },
+    attributionUrl: "https://isl.iar.kit.edu/english/8903.php",
     tone: "cyan",
     tags: { en: ["Speech", "Live translation"], de: ["Sprache", "Live-Übersetzung"] },
     description: {
@@ -44,7 +49,8 @@ window.AI4LT_DEMOS = [
     id: "beat-the-llm",
     number: "04",
     title: "Beat the LLM",
-    url: "",
+    url: "https://lt2srv-backup.iar.kit.edu/ai4ltapps/beat_llm",
+    image: "assets/logo-beatTheLLM.png",
     tone: "orange",
     tags: { en: ["Game", "Language models"], de: ["Spiel", "Sprachmodelle"] },
     description: {
@@ -57,11 +63,17 @@ window.AI4LT_DEMOS = [
     number: "05",
     title: "Babel Fish",
     url: "",
+    image: "assets/logo_bable.png",
+    attribution: {
+      en: { prefix: "Uses", linkLabel: "OpenEarable", suffix: ", developed by TECO at KIT" },
+      de: { prefix: "Nutzt", linkLabel: "OpenEarable", suffix: ", entwickelt von TECO am KIT" }
+    },
+    attributionUrl: "https://earables.teco.edu/",
     tone: "blue",
-    tags: { en: ["Translation", "Speech"], de: ["Übersetzung", "Sprache"] },
+    tags: { en: ["Live translation", "Earables"], de: ["Live-Übersetzung", "Earables"] },
     description: {
-      en: "Explore the vision of seamless communication across languages through AI-powered speech translation.",
-      de: "Erlebe die Vision nahtloser Kommunikation über Sprachgrenzen hinweg durch KI-gestützte Sprachübersetzung."
+      en: "Translate speech live in the cloud and hear the output through OpenEarable, an open earable platform also developed at KIT.",
+      de: "Übersetze Sprache live in der Cloud und höre die Ausgabe über OpenEarable, eine ebenfalls am KIT entwickelte offene Earable-Plattform."
     }
   }
 ];
