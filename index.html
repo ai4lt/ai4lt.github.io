@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Explore interactive AI language technology demos developed by AI4LT at Karlsruhe Institute of Technology." />
+    <meta name="theme-color" content="#071a26" />
+    <title>AI4LT Demos — KIT</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="demos.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#demos">Skip to demos</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="AI4LT demos home">
+        <img class="brand-logo" src="assets/logo-transparent-final.png" alt="AI4LT" width="316" height="164" />
+        <small>Karlsruhe Institute<br />of Technology</small>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#demos" data-i18n="navDemos">Demos</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="https://ai4lt.iar.kit.edu/english/index.php" target="_blank" rel="noreferrer" data-i18n="navResearch">Research ↗</a>
+      </nav>
+      <div class="language-switch" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="de" aria-pressed="false">DE</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="eyebrow">AI you can experience</p>
+          <h1 data-i18n="heroTitle">Language technology,<br /><em>live and interactive.</em></h1>
+          <p class="hero-intro" data-i18n="heroIntro">Explore systems for translation, multimodal learning, and human–AI interaction developed at KIT.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#demos" data-i18n="explore">Explore the demos ↓</a>
+            <a class="button button-quiet" href="https://ai4lt.iar.kit.edu/english/index.php" target="_blank" rel="noreferrer" data-i18n="meetGroup">Meet the research group ↗</a>
+          </div>
+        </div>
+        <div class="language-journey" aria-hidden="true">
+          <div class="journey-status"><i></i><span data-i18n="journeyLive">Live language journey</span><b>AI4LT / 01</b></div>
+          <div class="journey-step speech-step">
+            <span class="step-label" data-i18n="journeyInput">Speech input · German</span>
+            <div class="waveform"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <p>„Künstliche Intelligenz verbindet …“</p>
+          </div>
+          <div class="journey-path"><span></span><b data-i18n="journeyProcessing">transcribing · translating</b><span></span></div>
+          <div class="journey-step translation-step">
+            <span class="step-label" data-i18n="journeyOutput">Live translation · English</span>
+            <p>“Artificial intelligence <em>connects</em> …”</p>
+            <div class="confidence"><span></span><small>98%</small></div>
+          </div>
+          <div class="journey-response"><span>↳</span><p data-i18n="journeyAsk">Now ask, explore, interact.</p><b>↗</b></div>
+        </div>
+      </section>
+
+      <section class="demo-section" id="demos" aria-labelledby="demo-title">
+        <div class="section-heading">
+          <div><p class="eyebrow" data-i18n="showcase">Demo showcase</p><h2 id="demo-title" data-i18n="demoTitle">Try our research</h2></div>
+          <p data-i18n="demoIntro">These prototypes turn current research into experiences you can see, hear, and explore.</p>
+        </div>
+        <div class="notice"><span aria-hidden="true">◉</span><span data-i18n="loginNotice">Event access: Some demos require a KIT login or on-site access. Ask the team if a link does not open.</span></div>
+        <div class="demo-grid" id="demo-grid"></div>
+      </section>
+
+      <section class="about" id="about">
+        <div><p class="eyebrow" data-i18n="aboutEyebrow">Behind the demos</p><h2 data-i18n="aboutTitle">We teach machines to cross language barriers.</h2></div>
+        <div>
+          <p data-i18n="aboutText">AI4LT at Karlsruhe Institute of Technology researches speech, translation, and multimodal language technologies. This showcase brings our prototypes together for events, workshops, and curious visitors.</p>
+          <a class="text-link" href="https://ai4lt.iar.kit.edu/english/index.php" target="_blank" rel="noreferrer" data-i18n="learnMore">Learn more about AI4LT ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand"><strong>AI4LT</strong><span data-i18n="footerTagline">Artificial Intelligence for Language Technologies at KIT</span></div>
+      <div class="contact"><span data-i18n="contact">Contact</span><a href="mailto:jan.niehues@kit.edu">Jan Niehues · jan.niehues@kit.edu</a></div>
+      <div class="legal">
+        <a href="legal.html" data-i18n="legals">Legal notice</a>
+        <a href="privacy.html" data-i18n="privacy">Privacy</a>
+        <a href="accessibility.html" data-i18n="accessibility">Accessibility</a>
+      </div>
+    </footer>
+  </body>
+</html>
