@@ -75,5 +75,18 @@ window.AI4LT_DEMOS = [
       en: "Translate speech live in the cloud and hear the output through OpenEarable, an open earable platform also developed at KIT.",
       de: "Übersetze Sprache live in der Cloud und höre die Ausgabe über OpenEarable, eine ebenfalls am KIT entwickelte offene Earable-Plattform."
     }
+  },
+  {
+    id: "image-translator",
+    number: "06",
+    title: "Image Translator",
+    url: "https://imagetranslator.isl.iar.kit.edu",
+    image: "assets/logo-image-translator.png",
+    tone: "cyan",
+    tags: { en: ["Vision", "Translation"], de: ["Bildverarbeitung", "Übersetzung"] },
+    description: {
+      en: "Translate text within images directly, making visual content accessible across languages.",
+      de: "Übersetze Text direkt in Bildern und mache visuelle Inhalte sprachübergreifend zugänglich."
+    }
   }
 ];
