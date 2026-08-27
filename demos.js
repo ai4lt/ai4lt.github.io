@@ -79,9 +79,9 @@ window.AI4LT_DEMOS = [
   {
     id: "image-translator",
     number: "06",
-    title: "Image Translator",
+    title: "Image/Slide Translator",
     url: "https://imagetranslator.isl.iar.kit.edu",
-    image: "assets/logo-image-translator.png",
+    image: "assets/boom-logo.png",
     tone: "cyan",
     tags: { en: ["Vision", "Translation"], de: ["Bildverarbeitung", "Übersetzung"] },
     description: {
